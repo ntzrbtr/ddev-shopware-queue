@@ -1,0 +1,17 @@
+#ddev-generated
+
+ddev_version_constraint: '>=v1.23.0'
+web_extra_daemons:
+  - name: "shopware-queue"
+    command: 'while true; do /usr/bin/php /var/www/html/bin/console messenger:consume --all --time-limit=60 --memory-limit=512M; sleep 1; done'
+    directory: /var/www/html
+  - name: "shopware-scheduler"
+    command: 'while true; do /usr/bin/php /var/www/html/bin/console scheduled-task:run; sleep 1; done'
+    directory: /var/www/html
+
+  # Uncomment to also retry messages from the `failed` transport.
+  # Shopware won't reprocess failed messages on its own, see
+  # https://developer.shopware.com/docs/guides/hosting/infrastructure/message-queue.html
+  # - name: "shopware-queue-failed"
+  #   command: 'while true; do /usr/bin/php /var/www/html/bin/console messenger:consume failed --time-limit=60 --memory-limit=512M; sleep 60; done'
+  #   directory: /var/www/html
