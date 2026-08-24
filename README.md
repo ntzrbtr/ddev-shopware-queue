@@ -1,7 +1,7 @@
 [![add-on registry](https://img.shields.io/badge/DDEV-Add--on_Registry-blue)](https://addons.ddev.com)
-[![tests](https://github.com/ntzrbtr/ddev-shopware-queues/actions/workflows/tests.yml/badge.svg)](https://github.com/ntzrbtr/ddev-shopware-queues/actions/workflows/tests.yml)
-[![last commit](https://img.shields.io/github/last-commit/ntzrbtr/ddev-shopware-queues)](https://github.com/ntzrbtr/ddev-shopware-queues/commits)
-[![release](https://img.shields.io/github/v/release/ntzrbtr/ddev-shopware-queues)](https://github.com/ntzrbtr/ddev-shopware-queues/releases/latest)
+[![tests](https://github.com/ntzrbtr/ddev-shopware-queue/actions/workflows/tests.yml/badge.svg)](https://github.com/ntzrbtr/ddev-shopware-queue/actions/workflows/tests.yml)
+[![last commit](https://img.shields.io/github/last-commit/ntzrbtr/ddev-shopware-queue)](https://github.com/ntzrbtr/ddev-shopware-queue/commits)
+[![release](https://img.shields.io/github/v/release/ntzrbtr/ddev-shopware-queue)](https://github.com/ntzrbtr/ddev-shopware-queue/releases/latest)
 
 # DDEV Shopware Queues
 
@@ -18,7 +18,7 @@ documentation for more details.
 ## Installation
 
 ```shell
-ddev add-on get ntzrbtr/ddev-shopware-queues
+ddev add-on get ntzrbtr/ddev-shopware-queue
 ddev restart
 ```
 
