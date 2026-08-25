@@ -6,7 +6,7 @@ web_extra_daemons:
     command: 'while true; do /usr/bin/php /var/www/html/bin/console messenger:consume --all --time-limit=60 --memory-limit=512M; sleep 1; done'
     directory: /var/www/html
   - name: "shopware-scheduler"
-    command: 'while true; do /usr/bin/php /var/www/html/bin/console scheduled-task:run; sleep 1; done'
+    command: 'while true; do /usr/bin/php /var/www/html/bin/console scheduled-task:run; sleep 60; done'
     directory: /var/www/html
 
   # Uncomment to also retry messages from the `failed` transport.
